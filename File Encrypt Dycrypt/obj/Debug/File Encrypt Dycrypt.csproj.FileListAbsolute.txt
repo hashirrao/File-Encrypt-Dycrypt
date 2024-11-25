@@ -8,3 +8,13 @@ C:\Users\#\source\repos\File Encrypt Dycrypt\File Encrypt Dycrypt\obj\Debug\File
 C:\Users\#\source\repos\File Encrypt Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.csproj.CoreCompileInputs.cache
 C:\Users\#\source\repos\File Encrypt Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.exe
 C:\Users\#\source\repos\File Encrypt Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.pdb
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\bin\Debug\File Encrypt Dycrypt.exe.config
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\bin\Debug\File Encrypt Dycrypt.exe
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\bin\Debug\File Encrypt Dycrypt.pdb
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.csproj.AssemblyReference.cache
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File_Encrypt_Dycrypt.Main.resources
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File_Encrypt_Dycrypt.Properties.Resources.resources
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.csproj.GenerateResource.cache
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.csproj.CoreCompileInputs.cache
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.exe
+E:\Work\File-Encrypt-Dycrypt\File Encrypt Dycrypt\obj\Debug\File Encrypt Dycrypt.pdb

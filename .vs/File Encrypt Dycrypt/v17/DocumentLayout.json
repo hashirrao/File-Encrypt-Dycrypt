@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Work\\File-Encrypt-Dycrypt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|e:\\work\\file-encrypt-dycrypt\\file encrypt dycrypt\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|solutionrelative:file encrypt dycrypt\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|E:\\Work\\File-Encrypt-Dycrypt\\file encrypt dycrypt\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|solutionrelative:file encrypt dycrypt\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|E:\\Work\\File-Encrypt-Dycrypt\\file encrypt dycrypt\\edc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|solutionrelative:file encrypt dycrypt\\edc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|E:\\Work\\File-Encrypt-Dycrypt\\file encrypt dycrypt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE12DA3-46B8-4867-AD17-D419A985EF23}|File Encrypt Dycrypt\\File Encrypt Dycrypt.csproj|solutionrelative:file encrypt dycrypt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EDC.cs",
+              "DocumentMoniker": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\EDC.cs",
+              "RelativeDocumentMoniker": "File Encrypt Dycrypt\\EDC.cs",
+              "ToolTip": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\EDC.cs",
+              "RelativeToolTip": "File Encrypt Dycrypt\\EDC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:13:32.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Main.cs",
+              "RelativeDocumentMoniker": "File Encrypt Dycrypt\\Main.cs",
+              "ToolTip": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Main.cs",
+              "RelativeToolTip": "File Encrypt Dycrypt\\Main.cs",
+              "ViewState": "AQIAAOUAAAAAAAAAAADgv/oAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:12:04.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Main.cs",
+              "RelativeDocumentMoniker": "File Encrypt Dycrypt\\Main.cs",
+              "ToolTip": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Main.cs [Design]",
+              "RelativeToolTip": "File Encrypt Dycrypt\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:12:02.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Program.cs",
+              "RelativeDocumentMoniker": "File Encrypt Dycrypt\\Program.cs",
+              "ToolTip": "E:\\Work\\File-Encrypt-Dycrypt\\File Encrypt Dycrypt\\Program.cs",
+              "RelativeToolTip": "File Encrypt Dycrypt\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:11:48.191Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

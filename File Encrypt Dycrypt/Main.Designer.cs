@@ -41,6 +41,7 @@
             this.closeBtn = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.topBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
@@ -50,34 +51,38 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 39);
+            this.label1.Location = new System.Drawing.Point(16, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(58, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "File path";
             // 
             // pathBox
             // 
-            this.pathBox.Location = new System.Drawing.Point(15, 55);
+            this.pathBox.Location = new System.Drawing.Point(20, 68);
+            this.pathBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pathBox.Name = "pathBox";
-            this.pathBox.Size = new System.Drawing.Size(348, 20);
+            this.pathBox.Size = new System.Drawing.Size(463, 22);
             this.pathBox.TabIndex = 1;
             // 
             // passwordBox
             // 
-            this.passwordBox.Location = new System.Drawing.Point(71, 107);
+            this.passwordBox.Location = new System.Drawing.Point(95, 132);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.PasswordChar = '•';
-            this.passwordBox.Size = new System.Drawing.Size(136, 20);
+            this.passwordBox.Size = new System.Drawing.Size(180, 22);
             this.passwordBox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(12, 110);
+            this.label2.Location = new System.Drawing.Point(16, 135);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
@@ -85,9 +90,10 @@
             // 
             this.encryptRB.AutoSize = true;
             this.encryptRB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.encryptRB.Location = new System.Drawing.Point(15, 81);
+            this.encryptRB.Location = new System.Drawing.Point(20, 100);
+            this.encryptRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.encryptRB.Name = "encryptRB";
-            this.encryptRB.Size = new System.Drawing.Size(61, 17);
+            this.encryptRB.Size = new System.Drawing.Size(73, 20);
             this.encryptRB.TabIndex = 4;
             this.encryptRB.TabStop = true;
             this.encryptRB.Text = "Encrypt";
@@ -98,9 +104,10 @@
             // 
             this.decryptRB.AutoSize = true;
             this.decryptRB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.decryptRB.Location = new System.Drawing.Point(107, 82);
+            this.decryptRB.Location = new System.Drawing.Point(143, 101);
+            this.decryptRB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.decryptRB.Name = "decryptRB";
-            this.decryptRB.Size = new System.Drawing.Size(62, 17);
+            this.decryptRB.Size = new System.Drawing.Size(75, 20);
             this.decryptRB.TabIndex = 5;
             this.decryptRB.TabStop = true;
             this.decryptRB.Text = "Decrypt";
@@ -109,9 +116,10 @@
             // 
             // startBtn
             // 
-            this.startBtn.Location = new System.Drawing.Point(15, 136);
+            this.startBtn.Location = new System.Drawing.Point(20, 167);
+            this.startBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(435, 23);
+            this.startBtn.Size = new System.Drawing.Size(580, 28);
             this.startBtn.TabIndex = 6;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = true;
@@ -119,9 +127,10 @@
             // 
             // browseBtn
             // 
-            this.browseBtn.Location = new System.Drawing.Point(375, 53);
+            this.browseBtn.Location = new System.Drawing.Point(500, 65);
+            this.browseBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.browseBtn.Name = "browseBtn";
-            this.browseBtn.Size = new System.Drawing.Size(75, 23);
+            this.browseBtn.Size = new System.Drawing.Size(100, 28);
             this.browseBtn.TabIndex = 7;
             this.browseBtn.Text = "Browse";
             this.browseBtn.UseVisualStyleBackColor = true;
@@ -132,8 +141,9 @@
             this.topBar.BackgroundImage = global::File_Encrypt_Dycrypt.Properties.Resources.topBar;
             this.topBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.topBar.Location = new System.Drawing.Point(0, 0);
+            this.topBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.topBar.Name = "topBar";
-            this.topBar.Size = new System.Drawing.Size(462, 18);
+            this.topBar.Size = new System.Drawing.Size(616, 22);
             this.topBar.TabIndex = 8;
             this.topBar.TabStop = false;
             this.topBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBar_MouseDown);
@@ -145,9 +155,10 @@
             this.minimizeBtn.BackColor = System.Drawing.Color.Black;
             this.minimizeBtn.BackgroundImage = global::File_Encrypt_Dycrypt.Properties.Resources.minimize;
             this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.minimizeBtn.Location = new System.Drawing.Point(426, 3);
+            this.minimizeBtn.Location = new System.Drawing.Point(568, 4);
+            this.minimizeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.minimizeBtn.Name = "minimizeBtn";
-            this.minimizeBtn.Size = new System.Drawing.Size(14, 14);
+            this.minimizeBtn.Size = new System.Drawing.Size(19, 17);
             this.minimizeBtn.TabIndex = 9;
             this.minimizeBtn.TabStop = false;
             this.minimizeBtn.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -161,9 +172,10 @@
             this.closeBtn.BackColor = System.Drawing.Color.Black;
             this.closeBtn.BackgroundImage = global::File_Encrypt_Dycrypt.Properties.Resources.close;
             this.closeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.closeBtn.Location = new System.Drawing.Point(443, 3);
+            this.closeBtn.Location = new System.Drawing.Point(591, 4);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(14, 14);
+            this.closeBtn.Size = new System.Drawing.Size(19, 17);
             this.closeBtn.TabIndex = 10;
             this.closeBtn.TabStop = false;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
@@ -174,9 +186,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(15, 166);
+            this.progressBar1.Location = new System.Drawing.Point(19, 228);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(435, 15);
+            this.progressBar1.Size = new System.Drawing.Size(580, 18);
             this.progressBar1.TabIndex = 11;
             // 
             // backgroundWorker
@@ -187,12 +200,21 @@
             this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
             this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(19, 202);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(580, 18);
+            this.progressBar2.TabIndex = 12;
+            // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(462, 193);
+            this.ClientSize = new System.Drawing.Size(616, 259);
+            this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.minimizeBtn);
@@ -206,6 +228,7 @@
             this.Controls.Add(this.pathBox);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "File Encrypt Decrypt";
@@ -233,6 +256,7 @@
         private System.Windows.Forms.PictureBox closeBtn;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
+        private System.Windows.Forms.ProgressBar progressBar2;
     }
 }
 

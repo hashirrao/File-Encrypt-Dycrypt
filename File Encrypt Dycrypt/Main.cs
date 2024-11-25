@@ -18,9 +18,21 @@ namespace File_Encrypt_Dycrypt
         bool move;
         int x, y;
         String[] files;
+        private static byte[] abc;
+        private static byte[,] table;
         public Main()
         {
             InitializeComponent();
+            abc = new byte[256];
+            for (int i = 0; i < 256; i++)
+                abc[i] = Convert.ToByte(i);
+
+            table = new byte[256, 256];
+            for (int i = 0; i < 256; i++)
+                for (int j = 0; j < 256; j++)
+                {
+                    table[i, j] = abc[(i + j) % 256];
+                }
         }
 
         private void browseBtn_Click(object sender, EventArgs e)
@@ -57,7 +69,7 @@ namespace File_Encrypt_Dycrypt
         private void Main_Load(object sender, EventArgs e)
         {
             encryptRB.Checked = true;
-            new EDC();
+            //new EDC();
         }
 
         private void startBtn_Click(object sender, EventArgs e)
@@ -151,8 +163,6 @@ namespace File_Encrypt_Dycrypt
             {
                 foreach (String s in files)
                 {
-                    for (int i = 0; i < 2; i++)
-                    {
                         if (!File.Exists(s))
                         {
                             MessageBox.Show("File does not exist.");
@@ -161,17 +171,16 @@ namespace File_Encrypt_Dycrypt
                         byte[] result;
                         if (encryptRB.Checked)
                         {
-                            result = EDC.Encrypt(s, passwordBox.Text);
+                            result = Encrypt(s, passwordBox.Text, progressBar2);
                         }
-                        // Decrypt
                         else
                         {
-                            result = EDC.Decrypt(s, passwordBox.Text);
+                            result = Decrypt(s, passwordBox.Text, progressBar2);
                         }
+
                         // Save result to new file with the same extension
                         String fileExt = Path.GetExtension(pathBox.Text);
                         File.WriteAllBytes(s, result);
-                    }
                     if (!backgroundWorker.CancellationPending)
                     {
                         backgroundWorker.ReportProgress(index++ * 100 / process);
@@ -205,6 +214,101 @@ namespace File_Encrypt_Dycrypt
         private void closeBtn_MouseUp(object sender, MouseEventArgs e)
         {
             closeBtn.BackgroundImage = Properties.Resources.closeEnter;
+        }
+
+        public static byte[] Encrypt(String filePath, String encryptionKey, ProgressBar progressBar)
+        {
+            try
+            {
+                byte[] fileContent = File.ReadAllBytes(filePath);
+                byte[] passwordTmp = Encoding.ASCII.GetBytes(encryptionKey);
+                byte[] keys = new byte[fileContent.Length];
+                for (int i = 0; i < fileContent.Length; i++)
+                    keys[i] = passwordTmp[i % passwordTmp.Length];
+
+                // Set up the progress bar
+                progressBar.Invoke((MethodInvoker)(() =>
+                {
+                    progressBar.Minimum = 0;
+                    progressBar.Maximum = fileContent.Length;
+                    progressBar.Value = 0;
+                }));
+
+                // Encrypt
+                byte[] result = new byte[fileContent.Length];
+                for (int i = 0; i < fileContent.Length; i++)
+                {
+                    byte value = fileContent[i];
+                    byte key = keys[i];
+                    int valueIndex = Array.IndexOf(abc, value);
+                    int keyIndex = Array.IndexOf(abc, key);
+
+                    result[i] = table[keyIndex, valueIndex];
+
+                    // Update progress bar
+                    if (i % 100 == 0)
+                    {
+                        progressBar.Invoke((MethodInvoker)(() => progressBar.Value = i + 1));
+                    }
+                }
+                return result;
+            }
+            catch
+            {
+                MessageBox.Show("File is in use.\nClose other program is using this file and try again.");
+                return null;
+            }
+        }
+
+        public static byte[] Decrypt(String filePath, String encryptionKey, ProgressBar progressBar)
+        {
+            try
+            {
+                byte[] fileContent = File.ReadAllBytes(filePath);
+                byte[] passwordTmp = Encoding.ASCII.GetBytes(encryptionKey);
+                byte[] keys = new byte[fileContent.Length];
+                for (int i = 0; i < fileContent.Length; i++)
+                    keys[i] = passwordTmp[i % passwordTmp.Length];
+
+                // Set up the progress bar
+                progressBar.Invoke((MethodInvoker)(() =>
+                {
+                    progressBar.Minimum = 0;
+                    progressBar.Maximum = fileContent.Length;
+                    progressBar.Value = 0;
+                }));
+
+                byte[] result = new byte[fileContent.Length];
+
+                for (int i = 0; i < fileContent.Length; i++)
+                {
+                    byte value = fileContent[i];
+                    byte key = keys[i];
+                    int keyIndex = Array.IndexOf(abc, key);
+
+                    int valueIndex = -1;
+                    for (int j = 0; j < 256; j++)
+                        if (table[keyIndex, j] == value)
+                        {
+                            valueIndex = j;
+                            break;
+                        }
+
+                    result[i] = abc[valueIndex];
+
+                    // Update progress bar
+                    if (i % 100 == 0)
+                    {
+                        progressBar.Invoke((MethodInvoker)(() => progressBar.Value = i + 1));
+                    }
+                }
+                return result;
+            }
+            catch
+            {
+                MessageBox.Show("File is in use.\nClose other program is using this file and try again.");
+                return null;
+            }
         }
     }
 }
